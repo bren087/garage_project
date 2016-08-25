@@ -20,4 +20,20 @@ var addCar = function(){
 var displayCars = function (){
   console.log("in display cars");
   console.log( garage );
+  //empty our ul element
+  document.getElementById("allCars").innerHTML = "";
+  // for each car add a list item with year make and model
+  for (var i = 0; i < garage.length; i++) {
+    //car information
+    var carInfo = garage [ i ].year + " " +garage[ i ].make + " " + garage[ i ].model;
+    //put carInfo inside list item
+    //create li
+  var listItem =  document.createElement ( 'li' );
+    //create text node
+    var textNode = document.createTextNode( carInfo );
+    //append textNode as child to li
+    listItem.appendChild(textNode);
+    //append li to ul "allcars"
+      document.getElementById("allCars").appendChild(listItem);
+  }
 };//end displayCars

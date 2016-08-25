@@ -1,0 +1,3 @@
+.innerHTML- change something inside HTML element
+.createElement - create a new element
+.appendChild- add to a parent
