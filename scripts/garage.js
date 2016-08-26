@@ -10,13 +10,27 @@ var addCar = function(){
     picture: document.getElementById('picIn').value,
     description: document.getElementById('descIn').value,
   };// end new car
-  console.log( newCar );
-  // push car into Garage
- garage.push( newCar);
- //display cars
- displayCars();
-};// end addCar
 
+  if( newCar.year == '' || newCar.make ==''||newCar.model==''){
+    alert( "You can't have a car without Make, Model and Year");
+  }
+  else{
+    clearInputs();
+     // push car into Garage
+    garage.push( newCar);
+    //display cars
+    displayCars();
+  }
+
+};// end addCar
+var clearInputs = function(){
+  console.log( 'in clearInputs');
+  document.getElementById('yearIn').value = "";
+  document.getElementById('makeIn').value= "";
+  document.getElementById('modelIn').value= "";
+  document.getElementById('picIn').value = "";
+  document.getElementById('descIn').value = "";
+}; // end clearInputs
 var displayCars = function (){
   console.log("in display cars");
   console.log( garage );

@@ -10,3 +10,7 @@ Listy Lister
   * 0.4 - Push car object in to array
   * 0.5 - list cars on DOM
   * 0.6 - display cars on DOM
+  * 0.7- clear inputs
+  * 0.8- check for empties
+  * 0.9-
+  * 1.0
