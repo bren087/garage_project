@@ -1,5 +1,8 @@
 console.log(" you are now tuned into the script");
+}
 var garage =[];
+var carOnRoad=
+var drivingCar;
 var addCar = function(){
   // get user input
   // create car object
@@ -42,7 +45,7 @@ var displayCars = function (){
     //car information
     var carInfo = '<h2>' + garage [ i ].year + " " +garage[ i ].make + " " + garage[ i ].model +
      '</h2><img src="' + garage  [i ].picture + ' ">  ' + '<p>' +
-     garage[ i ].description + '</p>' + '<button onClick="takeOut( '+i +' )">Drive it like you stole it!</button> ';
+     garage[ i ].description + '</p>' + '<button id = "driveCar" onClick="takeOut( '+ i +' )">Drive it like you stole it!</button> ';
     //append car info to output div
       document.getElementById("allCars").innerHTML += carInfo;
   }
@@ -50,15 +53,16 @@ var displayCars = function (){
 var takeOut = function(index){
   console.log('Driving the ' + garage[index].year + ' '+garage[index].make+' '+garage[index].model);
   //splice car at this index from array
-  garage.splice( index, 1);
-  //show cars in garage
-  //replace button for driving with button for returning
-  //place a road image in place of the car image
-  displayCars();
+  drivingCar =garage.splice( index, 1);
+  console.log(drivingCar);
+    displayCars();
+    var driving car info=
+    document.getElementById("allCars").createElement("div")
+    
 };//end takeOut
 
 var putIn = function(index){
-  //add car that was spliced
+  //add drivingCar back to the garage
   //replace button for returning with button for Driving
   //replace car photo
 }
