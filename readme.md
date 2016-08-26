@@ -12,5 +12,5 @@ Listy Lister
   * 0.6 - display cars on DOM
   * 0.7- clear inputs
   * 0.8- check for empties
-  * 0.9-
+  * 0.9- remove a displayed car
   * 1.0
