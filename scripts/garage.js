@@ -1,8 +1,5 @@
 console.log(" you are now tuned into the script");
-}
 var garage =[];
-var carOnRoad=
-var drivingCar;
 var addCar = function(){
   // get user input
   // create car object
@@ -53,16 +50,21 @@ var displayCars = function (){
 var takeOut = function(index){
   console.log('Driving the ' + garage[index].year + ' '+garage[index].make+' '+garage[index].model);
   //splice car at this index from array
-  drivingCar =garage.splice( index, 1);
-  console.log(drivingCar);
+  garage.splice( index,1,testObject );
     displayCars();
-    var driving car info=
-    document.getElementById("allCars").createElement("div")
-    
+    ///-------button on the replaced object does not work-----\\\\
+console.log(garage);
 };//end takeOut
 
-var putIn = function(index){
-  //add drivingCar back to the garage
-  //replace button for returning with button for Driving
-  //replace car photo
-}
+// var putIn = function(index){
+//   //add drivingCar back to the garage
+//   //replace button for returning with button for Driving
+//   //replace car photo
+// };
+var testObject={
+  year: "",
+  make: "",
+  model: "Out for a drive!",
+  picture: "http://onegrandcars.com/wp-content/uploads/images/1987_Ford_Fiesta_196.jpg",
+  description:""
+};
